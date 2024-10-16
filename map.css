@@ -1,0 +1,26 @@
+body{
+    background-color: deepskyblue;
+}
+
+.mapdiv{
+    width:28%;
+    margin: auto;
+}
+
+.mapdiv path {
+    fill:linear-gradient(to right, #6cff52, #3ec5ff);
+    stroke: #dece0c;
+    stroke-width:4px;
+    transition: fill 0.3s;
+}
+
+.mapdiv :hover {
+    fill:linear-gradient(to right, #6cff52, #3ec5ff);
+}
+svg {
+   
+    top: 0;
+    left: 0;
+    opacity: 100%;
+   
+}
