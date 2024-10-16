@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPage</title>
+    <link rel="stylesheet" href="style.css"> <!-- 'style.css' dosya ismi düzeltildi -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- boxicons kütüphanesi bağlandı -->
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo"><span>Gizem's Page</span></a>
+        <ul class="links">
+            <li><a href="#home">Home</a></li> <!-- 'li' etiketleri eklendi -->
+            <li><a href="#education">Education</a></li>
+            <li><a href="#internship">Internship</a></li>
+            <li><a href="#hobby">Hobby</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class='bx bx-menu' id="menu"></i> <!-- menu sembolu için -->
+        <a href="#contact" class="btn">Contact Me</a>
+    </nav>
+    <section id="home">
+        <img src="ben.jpg" alt="">
+        <div class="info-box">
+            <h1>  Hi, I'm Gizem</h1>
+            <p> <span>
+                Hi, I am Gizem Dereli. 
+                I started Hacettepe University 
+                in 2020 and I am currently a 
+                4th year student in the geomatics 
+                engineering department. I am happy 
+                to study in this department.</span>
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h1>What is geomatics engineering ?</h1>
+        <!-- Burada iframe ile slider.html dosyasını bağlayacağız -->
+        <iframe src="slider.html" width="960" height="540" style="border: none;"></iframe>
+        <p> <span>
+            Geomatics Engineering is a branch of engineering focused on collecting,
+            processing, analyzing, and deriving meaningful insights from spatial
+            data related to the Earth. Technologies such as mapping, Geographic 
+            Information Systems (GIS), remote sensing, and GPS/GNSS are used to 
+            measure location, area, and elevation, which are then applied to various 
+            projects. This discipline plays a crucial role in fields such as engineering,
+            construction, environment, urban planning, and agriculture. Its primary goal 
+            is to provide accurate and up-to-date geographic data to support the planning
+            and management processes of projects.</span>
+        </p>
+    
+    </section>
+
+    <section id="internship">
+        <h1> My internship experinces</h1>
+        <img src="hgm.png" alt="">
+        <p></span>2024 Summer Internship</span></p>
+        <img src="kgm.png" alt="">
+        <p> <span>2023 Summer Internship</span></p>
+    </section>
+    <section id="hobby">
+        <h1>Who doesn't like maps?</h1>
+        <p><span>
+            I like to examine maps in my spare time. 
+            Cultures of people living in different provinces, provincial population, etc.
+             I enjoy examining attributes.</span>
+        </p>
+        <iframe src="map.html" width="1500" height="700" style="border: none;"></iframe>
+
+
+    </section>
+    <section id="contact">
+        <a href="https://www.linkedin.com/feed/" target="_blank">
+            <i class='bx bxl-linkedin-square'></i>
+        </a>
+        <a href="https://github.com/" target="_blank">
+            <i class='bx bxl-github'></i>
+        </a>
+    </section>
+    
+    
+</body>
+</html>

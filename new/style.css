@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif; /* sans-serif yedek font eklendi */
+}
+
+:root {
+    --background: rgb(24, 24, 24);
+    --second-background: rgb(21, 21, 21); /* Değişken adında boşluk olmamalı */
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2em 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(15, 15, 15, 0.8); /* rgba için alpha düzeltildi */
+    backdrop-filter: blur(10px); /* Blur değeri tanımlandı */
+    z-index: 1000;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+nav ul a {
+    color: white;
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out; /* Geçiş özelliği netleştirildi */
+}
+
+nav ul a:hover {
+    opacity: 1;
+}
+
+.logo {
+    font-size: 2em;
+    color: white;
+    font-weight: 800;
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+.btn {
+    padding: 0.5em 1em; /* Boşluk olan yer düzeltildi */
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--background);
+}
+
+span {
+    background: linear-gradient(to right, #6cff52, #3ec5ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Doğru property 'color' olmalı */
+}
+
+#menu {
+    color: white;
+    font-size: 3em;
+    display: none;
+}
+#home{
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 2em;
+    color: white;
+}
+#home img{
+    width: 18vw;
+    border-radius: 50%;
+    margin-top: 3em;
+}
+.info-box {
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+    max-width: 600px;
+}
+.info-box h1{
+    font-size: 5em;
+    font-weight: 500;
+    font-family: "Londrina Sketch", sans-serif;
+}
+
+#home p {
+    opacity: 0.7;
+    font-family: "Londrina Sketch", sans-serif;
+    font-size: 18px
+}
+
+#education {
+    margin-top: 150px; /* 50px yerine istediğiniz miktarda boşluk bırakabilirsiniz */
+    width: 100%; /* Kapsayıcı %100 genişlik */
+    max-width: 960px; /* Maksimum genişlik */
+     /* Ortalamak için */
+    overflow: hidden;
+    margin-left: 300px;
+}
+#education h1 {
+    color: white; /* Yazı rengi */
+    font-size: 40px; /* Yazı boyutu */
+    font-family: "Londrina Sketch", sans-serif; /* Yazı tipi */
+    font-weight: bold; /* Yazı kalınlığı */
+    margin-bottom: 20px; /* Alt boşluk */
+    padding: 10px; /* İç boşluk */
+    border-radius: 10px; /* Kenar yuvarlama */
+    text-transform: uppercase;
+    text-align: center;
+}
+#education p {
+    opacity: 0.7;
+    font-family: "Londrina Sketch", sans-serif;
+    font-size: 18px
+}
+#internship {
+    margin-top: 150px;
+    width: 100%; /* Kapsayıcı %100 genişlik */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; /* Ortalamak için margin ayarları */
+    overflow: hidden;
+}
+
+#internship img {
+    margin-right: 0; /* İki resim arasında boşluk istemiyorsanız bu değeri sıfırlayın */
+    border: 2px solid #000; /* Çerçeve ekler */
+    display: block; /* Alt alta sıralamak için */
+    margin: 20px auto; /* Resimleri ortalamak için otomatik margin */
+    width: 80%; /* Resimleri genişletmek için %80 oranında yapabilirsiniz */
+    max-width: 500px; /* Maksimum genişliği artırarak resimleri büyütün */
+}
+#internship h1{
+    color: white; /* Yazı rengi */
+    font-size: 40px; /* Yazı boyutu */
+    font-family: "Londrina Sketch", sans-serif; /* Yazı tipi */
+    font-weight: bold; /* Yazı kalınlığı */
+    margin-bottom: 20px; /* Alt boşluk */
+    padding: 10px; /* İç boşluk */
+    border-radius: 10px; /* Kenar yuvarlama */
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+#internship p {
+    margin-top: 10px;
+    opacity: 0.7; /* Saydamlık */
+    font-family: "Londrina Sketch", sans-serif; /* Font ailesi */
+    font-size: 18px; /* Font boyutu, buraya noktalı virgül eklenmeli */
+    text-align: center; /* Metni ortalar */
+    margin-bottom: 20px;
+}
+#internship p {
+    margin-top: 10px;
+    opacity: 0.7; /* Saydamlık */
+    font-family: "Londrina Sketch", sans-serif; /* Font ailesi */
+    font-size: 18px; /* Font boyutu, buraya noktalı virgül eklenmeli */
+    text-align: center; /* Metni ortalar */
+    margin-bottom: 20px;
+}
+#hobby {
+    margin-top: 150px;
+    width: 100%; /* Kapsayıcı %100 genişlik */
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto; /* Ortalamak için margin ayarları */
+    overflow: hidden;
+}
+#hobby h1{
+    color: white; /* Yazı rengi */
+    font-size: 40px; /* Yazı boyutu */
+    font-family: "Londrina Sketch", sans-serif; /* Yazı tipi */
+    font-weight: bold; /* Yazı kalınlığı */
+    margin-bottom: 20px; /* Alt boşluk */
+    padding: 10px; /* İç boşluk */
+    border-radius: 10px; /* Kenar yuvarlama */
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+#hobby p {
+    opacity: 0.7; /* Saydamlık */
+    font-family: "Londrina Sketch", sans-serif; /* Font ailesi */
+    font-size: 18px; /* Font boyutu, buraya noktalı virgül eklenmeli */
+    text-align: center; /* Metni ortalar */
+    margin-bottom: 20px;
+}
+#contact {
+    margin-top: 150px;
+    width: 100%; /* Kapsayıcı %100 genişlik */
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto; /* Ortalamak için margin ayarları */
+    font-size: 100px;
+}
